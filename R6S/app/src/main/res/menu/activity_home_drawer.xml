@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_op"
+            android:icon="@drawable/nav_logo"
+            android:title="Operators" />
+        <item
+            android:id="@+id/nav_weapon"
+            android:icon="@drawable/nav_pistol"
+            android:title="Weapons" />
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/nav_map"
+            android:title="Maps" />
+        <item
+            android:id="@+id/nav_gen"
+            android:icon="@drawable/nav_dice"
+            android:title="Generator" />
+    </group>
+
+</menu>

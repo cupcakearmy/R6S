@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">R6S</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="maps_btn_down">DOWN</string>
+    <string name="maps_btn_up">UP</string>
+    <string name="maps_img_type">MAP</string>
+    <string name="weapon_dmg">Damage</string>
+    <string name="weapon_dmg_n">Normal</string>
+    <string name="weapon_dmg_s">Silenced</string>
+    <string name="weapon_mag">Magazine</string>
+    <string name="weapon_mobility">Mobility</string>
+    <string name="weapon_rpm">RPM</string>
+    <string name="ops_attackers">Attackers</string>
+    <string name="ops_defenders">Defenders</string>
+    <string name="op_img">OP Img</string>
+    <string name="op_armor">Armor</string>
+    <string name="op_type">Type</string>
+    <string name="op_speed">Speed</string>
+    <string name="op_ability">Ability</string>
+    <string name="op_weapons">Weapons</string>
+    <string name="op_image">Operator Image</string>
+    <string name="op_gadget">Gadget</string>
+    <string name="op_primary">Primary</string>
+    <string name="op_secondary">Secondary</string>
+    <string name="rand_gen_attacker">Attacker</string>
+    <string name="rand_gen_defender">Defender</string>
+</resources>

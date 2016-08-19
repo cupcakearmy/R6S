@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.nicco.r6s.maps_view">
+
+    <ImageView
+        android:id="@+id/maps_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/r6s_bg"
+        android:contentDescription="@string/maps_img_type"
+        android:scaleType="centerCrop"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:id="@+id/maps_menu_low"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/maps_btn_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/maps_btn_down" />
+
+            <TextView
+                android:id="@+id/maps_cur_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/maps_btn_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/maps_btn_up" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/maps_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
