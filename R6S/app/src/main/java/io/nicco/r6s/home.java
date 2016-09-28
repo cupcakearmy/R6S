@@ -3,7 +3,9 @@ package io.nicco.r6s;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,8 +15,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -53,30 +53,6 @@ public class home extends AppCompatActivity
         ChangeFragment(new ops_view());
         setTitle("Operators");
 
-        ((TextView) findViewById(R.id.home_op)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ChangeFragment(new ops_view());
-                setTitle("Operators");
-            }
-        });
-
-        ((TextView) findViewById(R.id.home_weapons)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ChangeFragment(new weapons_view());
-                setTitle("Operators");
-            }
-        });
-
-        ((TextView) findViewById(R.id.home_rand)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ChangeFragment(new random_view());
-                setTitle("Operators");
-            }
-        });
-
         // Save DB from assets to storage
         DB_PATH = getFilesDir().getAbsolutePath() + "/databases/";
         DB_NAME = "R6S.sqlite";
@@ -87,7 +63,7 @@ public class home extends AppCompatActivity
         try {
             File file = new File(DB_PATH + DB_NAME);
             if (file.exists())
-                return;
+                file.delete();
             new File(DB_PATH).mkdirs();
             myInput = getAssets().open(DB_NAME);
             myOutput = new FileOutputStream(DB_PATH + DB_NAME);
@@ -107,7 +83,7 @@ public class home extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            if (getFragmentManager().getBackStackEntryCount() == 0) {
+            if (getFragmentManager().getBackStackEntryCount() == 1) {
                 this.finish();
             } else {
                 getFragmentManager().popBackStack();
@@ -124,7 +100,9 @@ public class home extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+        if (id == R.id.menu_btn_git) {
+            Intent open_git = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/CupCakeArmy/Android"));
+            startActivity(open_git);
             return true;
         }
         return super.onOptionsItemSelected(item);

@@ -30,4 +30,5 @@
     <string name="op_secondary">Secondary</string>
     <string name="rand_gen_attacker">Attacker</string>
     <string name="rand_gen_defender">Defender</string>
+    <string name="menu_git">Github</string>
 </resources>

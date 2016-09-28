@@ -4,12 +4,17 @@ package io.nicco.r6s;
 import android.app.Fragment;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -27,7 +32,8 @@ public class weapon_view extends Fragment {
         //Get Gun Info
         Bundle b = this.getArguments();
         SQLiteDatabase db = home.mkdb();
-        Cursor c = db.rawQuery("SELECT * FROM weapons WHERE id=" + b.getInt("id"), null);
+        int id = b.getInt("id");
+        Cursor c = db.rawQuery("SELECT * FROM weapons WHERE id=" + id, null);
         c.moveToFirst();
 
         // Map Of Text Views
@@ -54,6 +60,15 @@ public class weapon_view extends Fragment {
         txts.get("ops").setText(
                 Arrays.toString(c.getString(c.getColumnIndex("op")).split(","))
         );
+
+        //Setting Images
+        try {
+            Log.i("ID: ", String.valueOf(id));
+            InputStream ims = home.root().getAssets().open("Weapons/" + String.valueOf(id) + ".png");
+            ((ImageView) v.findViewById(R.id.weapon_image)).setImageDrawable(Drawable.createFromStream(ims, null));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         db.close();
 

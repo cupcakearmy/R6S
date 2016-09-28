@@ -10,8 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/bg_w"
+        android:background="@drawable/bg_w_c"
         android:gravity="bottom">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/weapon_image"
+            android:padding="32dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -62,7 +69,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
                     android:id="@+id/weapon_dmg_n"
                     android:textAlignment="center" />
 
@@ -98,7 +105,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
                     android:id="@+id/weapon_dmg_s"
                     android:textAlignment="center" />
 
@@ -129,7 +136,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
                     android:id="@+id/weapon_rpm"
                     android:textAlignment="center" />
 
@@ -151,7 +158,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
                     android:id="@+id/weapon_mob"
                     android:textAlignment="center" />
 
@@ -173,7 +180,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
                     android:id="@+id/weapon_mag"
                     android:textAlignment="center" />
 
