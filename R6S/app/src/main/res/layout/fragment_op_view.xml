@@ -1,46 +1,60 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="io.nicco.r6s.op_view">
 
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/bg_w">
-
-        <TextView
-            android:id="@+id/op_faction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="32dp"
-            android:textAlignment="textEnd"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_gravity="right|bottom"
-            android:textColor="#ffffff" />
-
-        <TextView
-            android:id="@+id/op_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="32dp"
-            android:textAlignment="textStart"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_gravity="left|bottom"
-            android:textColor="#ffffff" />
+        android:layout_weight="1">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/op_img"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:contentDescription="@string/op_image"
-            android:padding="32dp"
-            android:layout_gravity="center" />
-    </FrameLayout>
+            android:id="@+id/op_bg"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:foregroundGravity="top" />
+
+        <FrameLayout
+            android:id="@+id/op_view_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/op_faction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:padding="32dp"
+                android:textAlignment="textEnd"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/op_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:padding="32dp"
+                android:textAlignment="textStart"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/op_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="@string/op_image"
+                android:padding="32dp"
+                android:scaleType="fitCenter" />
+        </FrameLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -60,8 +74,8 @@
                 android:id="@+id/op_armor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="@android:style/TextAppearance.Material.Large"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -72,18 +86,18 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="16dp"
             android:layout_width="0dp"
-            android:layout_weight="1">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/op_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="@android:style/TextAppearance.Material.Large"
                 android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Large"
                 android:textSize="18sp" />
 
             <TextView
@@ -105,8 +119,8 @@
                 android:id="@+id/op_speed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="@android:style/TextAppearance.Material.Large"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -119,12 +133,12 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/op_ability"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/op_ability"
         android:padding="16dp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <View
         android:layout_width="wrap_content"
@@ -132,38 +146,38 @@
         android:background="@drawable/line_gradient"></View>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="16dp">
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:id="@+id/op_p_w"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/op_p_w"></LinearLayout>
+            android:orientation="horizontal"></LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:padding="0dp"
             android:text="@string/op_primary"
             android:textAlignment="center"
-            android:padding="0dp" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:id="@+id/op_s_w"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/op_s_w" />
+            android:orientation="horizontal" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:padding="0dp"
             android:text="@string/op_secondary"
             android:textAlignment="center"
-            android:padding="0dp" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
     </LinearLayout>
 
     <LinearLayout
@@ -174,17 +188,17 @@
         android:padding="16dp">
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:id="@+id/op_g"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/op_g" />
+            android:orientation="horizontal" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/op_gadget"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
     </LinearLayout>
 
 </LinearLayout>

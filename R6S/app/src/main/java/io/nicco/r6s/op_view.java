@@ -41,9 +41,7 @@ public class op_view extends Fragment {
         tmp.setPadding(16, 16, 16, 16);
         tmp.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         tmp.setBackgroundResource(R.drawable.weapon_selector);
-        if (Build.VERSION.SDK_INT < 23) {
-            tmp.setTextAppearance(home.root(), android.R.style.TextAppearance_Medium);
-        } else {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             tmp.setTextAppearance(android.R.style.TextAppearance_DeviceDefault_Medium);
         }
         tmp.setTextColor(0xffffffff);
@@ -59,7 +57,8 @@ public class op_view extends Fragment {
         //Get Operator Info
         Bundle b = this.getArguments();
         SQLiteDatabase db = home.mkdb();
-        Cursor c = db.rawQuery("SELECT * FROM operators WHERE id=" + b.getInt("id"), null);
+        int id = b.getInt("id");
+        Cursor c = db.rawQuery("SELECT * FROM operators WHERE id=" + id, null);
         c.moveToFirst();
 
         // Map Of Text Views
@@ -113,6 +112,16 @@ public class op_view extends Fragment {
         try {
             InputStream ims = home.root().getAssets().open("Operators/" + c.getString(c.getColumnIndex("type")) + "/" + c.getString(c.getColumnIndex("name")) + ".png");
             ((ImageView) v.findViewById(R.id.op_img)).setImageDrawable(Drawable.createFromStream(ims, null));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            Drawable d = Drawable.createFromStream(home.root().getAssets().open("OPs/" + String.valueOf(id) + ".jpg"), null);
+            ImageView op_bg = (ImageView) v.findViewById(R.id.op_bg);
+            //Matrix m = (Matrix) new Matrix.ScaleToFit("START");
+            //op_bg.setImageMatrix(m);
+            op_bg.setImageDrawable(d);
         } catch (IOException e) {
             e.printStackTrace();
         }
