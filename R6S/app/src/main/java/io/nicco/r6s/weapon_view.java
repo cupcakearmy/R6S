@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,7 +62,6 @@ public class weapon_view extends Fragment {
 
         //Setting Images
         try {
-            Log.i("ID: ", String.valueOf(id));
             InputStream ims = home.root().getAssets().open("Weapons/" + String.valueOf(id) + ".png");
             ((ImageView) v.findViewById(R.id.weapon_image)).setImageDrawable(Drawable.createFromStream(ims, null));
         } catch (IOException e) {

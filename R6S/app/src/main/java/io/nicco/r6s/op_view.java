@@ -4,14 +4,19 @@ package io.nicco.r6s;
 import android.app.Fragment;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -49,15 +54,17 @@ public class op_view extends Fragment {
         return frame;
     }
 
+    private int id = 0;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_op_view, container, false);
+        final View v = inflater.inflate(R.layout.fragment_op_view, container, false);
 
         //Get Operator Info
         Bundle b = this.getArguments();
         SQLiteDatabase db = home.mkdb();
-        int id = b.getInt("id");
+        id = b.getInt("id");
         Cursor c = db.rawQuery("SELECT * FROM operators WHERE id=" + id, null);
         c.moveToFirst();
 
@@ -116,15 +123,49 @@ public class op_view extends Fragment {
             e.printStackTrace();
         }
 
-        try {
-            Drawable d = Drawable.createFromStream(home.root().getAssets().open("OPs/" + String.valueOf(id) + ".jpg"), null);
-            ImageView op_bg = (ImageView) v.findViewById(R.id.op_bg);
-            //Matrix m = (Matrix) new Matrix.ScaleToFit("START");
-            //op_bg.setImageMatrix(m);
-            op_bg.setImageDrawable(d);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        v.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                Log.i("Trelelele", "ok");
+                try {
+
+                    //Drawable d = Drawable.createFromStream(home.root().getAssets().open("OPs/" + String.valueOf(id) + ".jpg"), null);
+                    ImageView op_bg = (ImageView) v.findViewById(R.id.op_bg);
+                    RelativeLayout img_cont = (RelativeLayout) v.findViewById(R.id.img_cont);
+                    Bitmap bitmap = BitmapFactory.decodeStream(home.root().getAssets().open("OPs/" + String.valueOf(id) + ".jpg"));
+
+                    int b_h = bitmap.getHeight();
+                    int b_w = bitmap.getWidth();
+                    //float ratio = op_bg.getHeight() / op_bg.getWidth();
+                    Log.i("W & H: ", op_bg.getMeasuredHeight() + " - " + op_bg.getHeight());
+            /*
+            if (ratio > 1) {
+                // BG is portrait
+                if (b_h > b_w) {
+                    //img is portrait
+                    bitmap = Bitmap.createBitmap(bitmap, 0, 0, b_h, (int) (b_h * ratio));
+                } else {
+                    //img is landscape
+                    bitmap = Bitmap.createBitmap(bitmap, 0, 0, (int) (b_w / ratio), b_w);
+                }
+            } else {
+                //BG is landscape
+                if (b_h > b_w) {
+                    //img is portrait
+                    bitmap = Bitmap.createBitmap(bitmap, 0, 0, (int) (b_w / ratio), b_w);
+                } else {
+                    //img is landscape
+                    bitmap = Bitmap.createBitmap(bitmap, 0, 0, b_h, (int) (b_h * ratio));
+                }
+            }*/
+
+                    //Crop
+                    op_bg.setImageBitmap(bitmap);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         db.close();
 
