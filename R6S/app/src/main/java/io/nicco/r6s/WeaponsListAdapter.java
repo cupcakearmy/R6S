@@ -1,5 +1,6 @@
 package io.nicco.r6s;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
@@ -13,6 +14,8 @@ import android.widget.TextView;
 import java.util.List;
 
 public class WeaponsListAdapter extends RecyclerView.Adapter<WeaponsListAdapter.ViewHolder> {
+
+    private Activity root;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
@@ -31,8 +34,9 @@ public class WeaponsListAdapter extends RecyclerView.Adapter<WeaponsListAdapter.
 
     private List<WeaponListItem> data;
 
-    public WeaponsListAdapter(List<WeaponListItem> d) {
+    public WeaponsListAdapter(List<WeaponListItem> d, Activity r) {
         data = d;
+        root = r;
     }
 
     @Override
@@ -54,7 +58,7 @@ public class WeaponsListAdapter extends RecyclerView.Adapter<WeaponsListAdapter.
                 b.putInt("id", data.get(position).id);
                 Fragment f = new weapon_view();
                 f.setArguments(b);
-                home.ChangeFragment(f);
+                home.ChangeFragment(f, root);
             }
         });
     }

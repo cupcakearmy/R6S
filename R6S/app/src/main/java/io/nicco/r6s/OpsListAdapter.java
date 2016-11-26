@@ -1,5 +1,6 @@
 package io.nicco.r6s;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -17,6 +18,8 @@ import java.io.InputStream;
 import java.util.List;
 
 public class OpsListAdapter extends RecyclerView.Adapter<OpsListAdapter.ViewHolder> {
+
+    private Activity root;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
@@ -37,8 +40,9 @@ public class OpsListAdapter extends RecyclerView.Adapter<OpsListAdapter.ViewHold
 
     private List<OpsListItem> data;
 
-    public OpsListAdapter(List<OpsListItem> d) {
+    public OpsListAdapter(List<OpsListItem> d, Activity r) {
         data = d;
+        root = r;
     }
 
     @Override
@@ -55,7 +59,7 @@ public class OpsListAdapter extends RecyclerView.Adapter<OpsListAdapter.ViewHold
         viewHolder.txt_n.setText(data.get(position).n);
         viewHolder.txt_f.setText(data.get(position).f);
         try {
-            InputStream ims = home.root().getAssets().open(data.get(position).i);
+            InputStream ims = root.getAssets().open(data.get(position).i);
             viewHolder.txt_i.setImageDrawable(Drawable.createFromStream(ims, null));
         } catch (IOException e) {
             e.printStackTrace();
@@ -67,7 +71,7 @@ public class OpsListAdapter extends RecyclerView.Adapter<OpsListAdapter.ViewHold
                 b.putInt("id", data.get(position).id);
                 Fragment f = new op_view();
                 f.setArguments(b);
-                home.ChangeFragment(f);
+                home.ChangeFragment(f, root);
             }
         });
     }

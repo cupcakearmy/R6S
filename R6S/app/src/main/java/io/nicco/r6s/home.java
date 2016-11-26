@@ -27,7 +27,6 @@ public class home extends AppCompatActivity
 
     private DrawerLayout drawer;
     private Fragment curFrag = null;
-    private static Activity c;
     private static String DB_PATH;
     private static String DB_NAME;
     private final String DB_URL = "https://raw.githubusercontent.com/CupCakeArmy/static/master/R6S/R6S.sqlite";
@@ -39,8 +38,6 @@ public class home extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        c = this;
-
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -50,7 +47,7 @@ public class home extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        ChangeFragment(new ops_view());
+        ChangeFragment(new ops_view(), this);
         setTitle("Operators");
 
         // Save DB from assets to storage
@@ -129,22 +126,18 @@ public class home extends AppCompatActivity
         }
 
         setTitle(title);
-        c.getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-        ChangeFragment(curFrag);
+        getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        ChangeFragment(curFrag, this);
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
-    public static void ChangeFragment(Fragment f) {
-        c.getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.main_cont, f).commit();
+    public static void ChangeFragment(Fragment f, Activity a) {
+        a.getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.main_cont, f).commit();
     }
 
     public static SQLiteDatabase mkdb() {
         return SQLiteDatabase.openDatabase(DB_PATH + DB_NAME, null, 0);
-    }
-
-    public static Activity root() {
-        return c;
     }
 }

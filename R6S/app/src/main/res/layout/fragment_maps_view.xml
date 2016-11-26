@@ -5,15 +5,14 @@
     android:orientation="vertical"
     tools:context="io.nicco.r6s.maps_view">
 
-    <ImageView
+    <io.nicco.r6s.TouchImageView
         android:id="@+id/maps_img"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
         android:background="@color/r6s_bg"
         android:contentDescription="@string/maps_img_type"
         android:scaleType="centerCrop"
-        android:layout_weight="1" />
-
+        android:layout_weight="1"
+        android:layout_height="0dp" />
 
     <LinearLayout
         android:id="@+id/maps_menu_low"

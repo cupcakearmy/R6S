@@ -1,6 +1,7 @@
 package io.nicco.r6s;
 
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -19,8 +20,12 @@ public class weapons_view extends Fragment {
     public weapons_view() {
     }
 
+    private Activity root;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        root = getActivity();
+
         View v = inflater.inflate(R.layout.fragment_weapons_view, container, false);
         RecyclerView weapon_list = (RecyclerView) v.findViewById(R.id.weapons_list);
         List<WeaponListItem> data = new ArrayList<>();
@@ -40,8 +45,8 @@ public class weapons_view extends Fragment {
         }
         db.close();
 
-        weapon_list.setAdapter(new WeaponsListAdapter(data));
-        weapon_list.setLayoutManager(new LinearLayoutManager(home.root()));
+        weapon_list.setAdapter(new WeaponsListAdapter(data, root));
+        weapon_list.setLayoutManager(new LinearLayoutManager(root));
 
         return v;
     }

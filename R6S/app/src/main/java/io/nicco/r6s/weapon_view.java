@@ -62,7 +62,7 @@ public class weapon_view extends Fragment {
 
         //Setting Images
         try {
-            InputStream ims = home.root().getAssets().open("Weapons/" + String.valueOf(id) + ".png");
+            InputStream ims = getActivity().getAssets().open("Weapons/" + String.valueOf(id) + ".png");
             ((ImageView) v.findViewById(R.id.weapon_image)).setImageDrawable(Drawable.createFromStream(ims, null));
         } catch (IOException e) {
             e.printStackTrace();

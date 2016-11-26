@@ -1,7 +1,9 @@
 package io.nicco.r6s;
 
 
+import android.app.Activity;
 import android.app.Fragment;
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -19,9 +21,13 @@ public class ops_view extends Fragment {
     public ops_view() {
     }
 
+    private Activity root;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        root = getActivity();
 
         View v = inflater.inflate(R.layout.fragment_ops_view, container, false);
         RecyclerView op_a_list = (RecyclerView) v.findViewById(R.id.ops_list_a);
@@ -54,10 +60,10 @@ public class ops_view extends Fragment {
         }
         db.close();
 
-        op_a_list.setAdapter(new OpsListAdapter(data_a));
-        op_a_list.setLayoutManager(new LinearLayoutManager(home.root()));
-        op_d_list.setAdapter(new OpsListAdapter(data_d));
-        op_d_list.setLayoutManager(new LinearLayoutManager(home.root()));
+        op_a_list.setAdapter(new OpsListAdapter(data_a, root));
+        op_a_list.setLayoutManager(new LinearLayoutManager(root));
+        op_d_list.setAdapter(new OpsListAdapter(data_d, root));
+        op_d_list.setLayoutManager(new LinearLayoutManager(root));
 
         return v;
     }

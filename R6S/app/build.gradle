@@ -9,14 +9,15 @@ android {
             keyPassword "Ek09iG2aB_XMlMe3kQ4mynrnPLi!PXkC"
         }
     }
-    compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId "io.nicco.r6s"
         minSdkVersion 19
-        targetSdkVersion 24
-        versionCode 8
-        versionName '1.2'
+        targetSdkVersion 25
+        versionCode 13
+        versionName '1.4'
+        signingConfig signingConfigs.release
     }
     buildTypes {
         release {
