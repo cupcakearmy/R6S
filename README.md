@@ -32,6 +32,17 @@ Please report these to `nicco.borgioli@gmail.com` or make an Issue on this git
 - UI improvements
 - Github link for easy of access
 
+##### 1.3
+
+- New UI and performance improvements
+- Zoom the Maps
+
+##### 1.4 (Currently still bloked by the play store)
+
+- Added maps: Favela & Skyscraper
+- New Operators
+- Claymores
+
 #### Future Development:
 
 ##### Just ideas, no garantees! (Any help is welcome)
