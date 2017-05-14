@@ -1,4 +1,4 @@
-# Android Apps
+# R6S
 
 ###### There is an APK folder with the versions of the apps
 
