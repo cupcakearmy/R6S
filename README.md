@@ -1,7 +1,6 @@
 # Android Apps
-######There is an APK folder with the versions of the apps
 
-## R6S
+###### There is an APK folder with the versions of the apps
 
 ### Companion & guide app for Ubisofts Rainbow 6 Siege
 
