@@ -42,7 +42,7 @@ Please report these to `nicco.borgioli@gmail.com` or make an Issue on this git
 - New Operators
 - Claymores
 
-##### 1.5
+##### 2.0
 
 - Major Rework.
 - Complete new codebase
