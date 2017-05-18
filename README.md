@@ -42,6 +42,13 @@ Please report these to `nicco.borgioli@gmail.com` or make an Issue on this git
 - New Operators
 - Claymores
 
+##### 1.5
+
+- Major Rework.
+- Complete new codebase
+- JSON Based now
+- Over the air updates on stats
+
 #### Future Development:
 
 ##### Just ideas, no garantees! (Any help is welcome)
