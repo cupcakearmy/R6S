@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.nicco.r6s.single_weapon">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_abstract_0"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/single_weapon_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="32dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/single_weapon_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="32dp"
+                android:textAlignment="textStart"
+                android:textAppearance="@android:style/TextAppearance.Material.Large"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:padding="32dp"
+                android:textAlignment="textEnd">
+
+                <TextView
+                    android:id="@+id/single_weapon_type"
+                    style="@style/AppTheme.BlueTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 1st Row -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing2x">
+
+            <LinearLayout
+                android:layout_width="@dimen/spacing0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing2x">
+
+                <TextView
+                    android:id="@+id/single_weapon_dmg_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_weapon_dmg_b"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/spacing0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing2x">
+
+                <TextView
+                    android:id="@+id/single_weapon_slot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_weapon_slot"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/spacing0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing2x">
+
+                <TextView
+                    android:id="@+id/single_weapon_dmg_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_weapon_dmg_s"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 2nd Row -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing2x">
+
+            <LinearLayout
+                android:layout_width="@dimen/spacing0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing2x">
+
+                <TextView
+                    android:id="@+id/single_weapon_rpm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_weapon_rpm"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/spacing0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing2x">
+
+                <TextView
+                    android:id="@+id/single_weapon_mob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_weapon_mob"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/spacing0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing2x">
+
+                <TextView
+                    android:id="@+id/single_weapon_mag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_weapon_mag"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@android:color/background_light" />
+
+        <!-- 3rd Row -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing2x">
+
+            <LinearLayout
+                android:id="@+id/single_weapon_row0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing0"
+                android:text="@string/nav_ops"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

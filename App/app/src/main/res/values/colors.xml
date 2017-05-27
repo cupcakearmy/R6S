@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--GENERAL-->
+    <color name="colorPrimary">#64ce13</color>
+    <color name="colorPrimaryDark">#64ce13</color>
+    <color name="colorAccent">#4250ea</color>
+    <color name="light">#ffffff</color>
+    <color name="dark">#000000</color>
+    <color name="text_light">#eeeeee</color>
+    <color name="text_dark">#111111</color>
+
+</resources>

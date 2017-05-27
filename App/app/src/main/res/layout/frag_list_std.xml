@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing1x"
+        android:background="@drawable/round_box"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing1x">
+
+        <ImageView
+            android:id="@+id/list_std_icon"
+            android:layout_width="@dimen/ops_list_icon_size"
+            android:layout_height="@dimen/ops_list_icon_size" />
+
+        <TextView
+            android:id="@+id/list_std_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing2x"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/text_dark"
+            android:textStyle="bold" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/list_std_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing1x"
+            android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+
+        <TextView
+            android:id="@+id/list_std_attr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing2x"
+            android:background="@drawable/round_box_inv"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing05x"
+            android:paddingEnd="@dimen/spacing1x"
+            android:paddingStart="@dimen/spacing1x"
+            android:paddingTop="@dimen/spacing05x"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/text_light" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_item_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/drawer_item_ops"
+            android:icon="@drawable/ic_operators"
+            android:title="@string/nav_ops" />
+        <item
+            android:id="@+id/drawer_item_maps"
+            android:icon="@drawable/ic_maps"
+            android:title="@string/nav_maps" />
+        <item
+            android:id="@+id/drawer_item_weapons"
+            android:icon="@drawable/ic_weapons"
+            android:title="@string/nav_weapons" />
+
+        <item
+            android:id="@+id/drawer_item_shuffle"
+            android:icon="@drawable/ic_shuffle"
+            android:title="@string/nav_rand" />
+    </group>
+
+    <item android:title="@string/nav_other">
+        <menu>
+            <group android:checkableBehavior="single">
+                <!--<item-->
+                    <!--android:id="@+id/drawer_item_settings"-->
+                    <!--android:icon="@drawable/ic_settings"-->
+                    <!--android:title="@string/nav_settings" />-->
+                <item
+                    android:id="@+id/drawer_item_info"
+                    android:icon="@drawable/ic_info"
+                    android:title="@string/nav_about" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

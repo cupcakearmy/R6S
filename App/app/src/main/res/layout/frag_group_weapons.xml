@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_light"
+    tools:context="io.nicco.r6s.group_weapons">
+
+    <ListView
+        android:id="@+id/group_weapons_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:padding="@dimen/spacing1x">
+
+    </ListView>
+
+</FrameLayout>

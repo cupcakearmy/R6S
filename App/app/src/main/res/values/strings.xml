@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- GENERAL -->
+    <string name="app_name">R6S</string>
+    <string name="app_name_short">R6S</string>
+    <string name="app_name_long">R6S Guide</string>
+    <string name="app_description">R6S is a community driven guide for Ubisofts Rainbow Six Siege. The app is and will stay Free and without Ads.</string>
+
+    <!--DRAWER-->
+    <string name="app_drawer_open">Drawer Open</string>
+    <string name="app_drawer_closed">Drawer Closed</string>
+    <string name="app_drawer_side_text">Guide</string>
+
+    <!--PAGES-->
+    <string name="nav_home">Home</string>
+    <string name="nav_ops">Operators</string>
+    <string name="nav_weapons">Weapons</string>
+    <string name="nav_maps">Maps</string>
+    <string name="nav_rand">Random</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About</string>
+    <string name="nav_other">Other</string>
+
+    <!--FRAGMENTS-->
+    <!--ERROR-->
+    <string name="frag_error_txt">Error :(</string>
+
+    <!--OPS-->
+    <string name="single_op_img">Operator Image</string>
+    <string name="single_op_armor">Armor</string>
+    <string name="single_op_type">Type</string>
+    <string name="single_op_speed">Speed</string>
+    <string name="single_op_icon">Operator Icon</string>
+    <string name="single_op_slot_0">Primary</string>
+    <string name="single_op_slot_1">Secondary</string>
+    <string name="single_op_gadgets">Gadgets</string>
+
+    <string name="menu_ops_sort_name">Name</string>
+    <string name="menu_ops_sort_type">Type</string>
+    <string name="menu_ops_sort_faction">Faction</string>
+
+    <!--ABOUT-->
+    <string name="single_about_text">🛠  with ♥ and 🍕 by Niccolo Borgioli</string>
+    <string name="single_about_github_contribute">Contribute on GitHub!</string>
+    <string name="single_about_github_bugs">Report Bugs &amp; Wrong Info: Here</string>
+    <string name="single_about_changelog">Changelog</string>
+
+    <!--WEAPON-->
+    <string name="single_weapon_dmg_b">Base</string>
+    <string name="single_weapon_dmg_s">Silenced</string>
+    <string name="single_weapon_slot">Slot</string>
+    <string name="single_weapon_rpm">RMP</string>
+    <string name="single_weapon_mob">Mobility</string>
+    <string name="single_weapon_mag">Magazine</string>
+
+    <string name="menu_weapons_sort_name">Name</string>
+    <string name="menu_weapons_sort_class">Class</string>
+
+    <!--MAPS-->
+    <string name="single_maps_btn_up">UP</string>
+    <string name="single_maps_btn_down">DOWN</string>
+    <string name="single_maps_img">Level Map</string>
+
+    <!--RAND-->
+    <string name="op_attacker">Attacker</string>
+    <string name="op_defender">Defender</string>
+
+    <!--MENU-->
+    <string name="menu_sort">Sort</string>
+
+    <!--HOME-->
+    <string name="single_home_contribute_text">If you wish to contribute go to the info section and find the GitHub link. There will be more info there.</string>
+    <string name="single_home_contribute">Contribute</string>
+</resources>

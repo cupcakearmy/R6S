@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.nicco.r6s.single_op">
+
+    <ImageView
+        android:id="@+id/single_op_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/single_op_img"
+        android:foregroundGravity="top"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/op_view_spacer"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <FrameLayout
+                android:id="@+id/op_view_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing4x">
+
+                <TextView
+                    android:id="@+id/single_op_faction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/single_op_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/single_op_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/single_op_icon"
+                    android:scaleType="fitCenter" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing2x">
+
+                <LinearLayout
+                    android:layout_width="@dimen/spacing0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing2x">
+
+                    <TextView
+                        android:id="@+id/single_op_armor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance.Material.Large.Inverse"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/single_op_armor"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/spacing0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing2x">
+
+                    <TextView
+                        android:id="@+id/single_op_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/single_op_type"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/spacing0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing2x">
+
+                    <TextView
+                        android:id="@+id/single_op_speed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance.Material.Large.Inverse"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/single_op_speed"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/single_op_ability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:padding="@dimen/spacing2x"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@android:color/background_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing2x">
+
+                <LinearLayout
+                    android:id="@+id/single_op_row0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/spacing0"
+                    android:text="@string/single_op_slot_0"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+
+                <LinearLayout
+                    android:id="@+id/single_op_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/spacing0"
+                    android:text="@string/single_op_slot_1"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+
+                <LinearLayout
+                    android:id="@+id/single_op_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/spacing0"
+                    android:text="@string/single_op_gadgets"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small.Inverse" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

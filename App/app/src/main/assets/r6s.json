@@ -1,0 +1,1571 @@
+{
+  "_schema": {
+    "version": 0
+  },
+  "factions": {
+    "0": {
+      "name": "SAS",
+      "nation": "British",
+      "ops": [
+        0,
+        1,
+        13,
+        14
+      ]
+    },
+    "1": {
+      "name": "FBI SWAT",
+      "nation": "USA",
+      "ops": [
+        2,
+        4,
+        15,
+        16
+      ]
+    },
+    "2": {
+      "name": "GIGN",
+      "nation": "France",
+      "ops": [
+        3,
+        5,
+        17,
+        18
+      ]
+    },
+    "3": {
+      "name": "Spetsnaz",
+      "nation": "Russia",
+      "ops": [
+        6,
+        7,
+        19,
+        20
+      ]
+    },
+    "4": {
+      "name": "GSG9",
+      "nation": "Germany",
+      "ops": [
+        8,
+        9,
+        21,
+        22
+      ]
+    },
+    "5": {
+      "name": "JTF2",
+      "nation": "Canada",
+      "ops": [
+        10,
+        23
+      ]
+    },
+    "6": {
+      "name": "Navy SEALs",
+      "nation": "USA",
+      "ops": [
+        11,
+        24
+      ]
+    },
+    "7": {
+      "name": "BOPE",
+      "nation": "Brazil",
+      "ops": [
+        12,
+        25
+      ]
+    },
+    "8": {
+      "name": "SAT",
+      "nation": "Japan",
+      "ops": [
+        26,
+        27
+      ]
+    },
+    "9": {
+      "name": "GEO",
+      "nation": "Spain",
+      "ops": [
+        28,
+        29
+      ]
+    }
+  },
+  "gadgets": {
+    "0": {
+      "name": "Frag Granade"
+    },
+    "1": {
+      "name": "Stun Granade"
+    },
+    "2": {
+      "name": "Breaching Charge"
+    },
+    "3": {
+      "name": "Deployable Shield"
+    },
+    "4": {
+      "name": "Smoke Granade"
+    },
+    "5": {
+      "name": "Nitro Cell"
+    },
+    "6": {
+      "name": "Barbed Wire"
+    },
+    "7": {
+      "name": "Impact Granade"
+    },
+    "8": {
+      "name": "Claymore"
+    }
+  },
+  "maps": {
+    "0": {
+      "name": "Bank"
+    },
+    "1": {
+      "name": "Border"
+    },
+    "2": {
+      "name": "Chalet"
+    },
+    "3": {
+      "name": "Club House"
+    },
+    "4": {
+      "name": "Consulate"
+    },
+    "5": {
+      "name": "Favela"
+    },
+    "6": {
+      "name": "Hereford Base"
+    },
+    "7": {
+      "name": "House"
+    },
+    "8": {
+      "name": "Kafe Dostoyevsky"
+    },
+    "9": {
+      "name": "Kanal"
+    },
+    "10": {
+      "name": "Oregon"
+    },
+    "11": {
+      "name": "Presidantial Plane"
+    },
+    "12": {
+      "name": "Skyscraper"
+    },
+    "13": {
+      "name": "Yacht"
+    },
+    "14": {
+      "name": "Resort"
+    }
+  },
+  "operators_types": {
+    "0": "Attacker",
+    "1": "Defender",
+    "2": "Recruit"
+  },
+  "operators": {
+    "0": {
+      "ability": "Tactical Breaching Hammer",
+      "armor": 2,
+      "faction": 0,
+      "gadget": [
+        0,
+        1
+      ],
+      "name": "Sledge",
+      "speed": 2,
+      "type": 0,
+      "wid": [
+        22,
+        9,
+        31,
+        34
+      ]
+    },
+    "1": {
+      "ability": "EMP Granade",
+      "armor": 2,
+      "faction": 0,
+      "gadget": [
+        8,
+        2
+      ],
+      "name": "Thatcher",
+      "speed": 2,
+      "type": 0,
+      "wid": [
+        5,
+        22,
+        9,
+        31
+      ]
+    },
+    "2": {
+      "ability": "M120 Breaching Round",
+      "armor": 1,
+      "faction": 1,
+      "gadget": [
+        2,
+        4
+      ],
+      "name": "Ash",
+      "speed": 3,
+      "type": 0,
+      "wid": [
+        8,
+        10,
+        29,
+        26
+      ]
+    },
+    "3": {
+      "ability": "BC-3 Exo-Thermic Charge",
+      "armor": 2,
+      "faction": 1,
+      "gadget": [
+        4,
+        8
+      ],
+      "name": "Thermite",
+      "speed": 2,
+      "type": 0,
+      "wid": [
+        21,
+        3,
+        29,
+        26
+      ]
+    },
+    "4": {
+      "ability": "RSD Shock Drone",
+      "armor": 2,
+      "faction": 2,
+      "gadget": [
+        2,
+        8
+      ],
+      "name": "Twitch",
+      "speed": 2,
+      "type": 0,
+      "wid": [
+        7,
+        1,
+        28,
+        32
+      ]
+    },
+    "5": {
+      "ability": "Extendable Shield",
+      "armor": 3,
+      "faction": 2,
+      "gadget": [
+        1,
+        4
+      ],
+      "name": "Montagne",
+      "speed": 1,
+      "type": 0,
+      "wid": [
+        35,
+        32,
+        28
+      ]
+    },
+    "6": {
+      "ability": "HDS Flip Sight",
+      "armor": 2,
+      "faction": 3,
+      "gadget": [
+        4,
+        8
+      ],
+      "name": "Glaz",
+      "speed": 2,
+      "type": 0,
+      "wid": [
+        0,
+        33,
+        27
+      ]
+    },
+    "7": {
+      "ability": "APM-6 Cluster Charge",
+      "armor": 3,
+      "faction": 3,
+      "gadget": [
+        2,
+        1
+      ],
+      "name": "Fuze",
+      "speed": 1,
+      "type": 0,
+      "wid": [
+        35,
+        18,
+        27,
+        33
+      ]
+    },
+    "8": {
+      "ability": "G52 Tactical Flash",
+      "armor": 3,
+      "faction": 4,
+      "gadget": [
+        4,
+        2
+      ],
+      "name": "Blitz",
+      "speed": 1,
+      "type": 0,
+      "wid": [
+        35,
+        30
+      ]
+    },
+    "9": {
+      "ability": "Electronics Detector",
+      "armor": 1,
+      "faction": 4,
+      "gadget": [
+        2,
+        1
+      ],
+      "name": "IQ",
+      "speed": 3,
+      "type": 0,
+      "wid": [
+        6,
+        2,
+        19,
+        30
+      ]
+    },
+    "10": {
+      "ability": "Skeleton Key",
+      "armor": 2,
+      "faction": 5,
+      "gadget": [
+        0,
+        1
+      ],
+      "name": "Buck",
+      "speed": 2,
+      "type": 0,
+      "wid": [
+        36,
+        37,
+        38
+      ]
+    },
+    "11": {
+      "ability": "Rifle Shield",
+      "armor": 2,
+      "faction": 6,
+      "gadget": [
+        2,
+        1
+      ],
+      "name": "Blackbeard",
+      "speed": 2,
+      "type": 0,
+      "wid": [
+        39,
+        40,
+        41
+      ]
+    },
+    "12": {
+      "ability": "Tactical Crossbow",
+      "armor": 1,
+      "faction": 7,
+      "gadget": [
+        0,
+        1
+      ],
+      "name": "Capitao",
+      "speed": 3,
+      "type": 0,
+      "wid": [
+        42,
+        43,
+        44
+      ]
+    },
+    "13": {
+      "ability": "Z8 Remote Gas Granade",
+      "armor": 2,
+      "faction": 0,
+      "gadget": [
+        7,
+        6
+      ],
+      "name": "Smoke",
+      "speed": 2,
+      "type": 1,
+      "wid": [
+        22,
+        12,
+        31,
+        34
+      ]
+    },
+    "14": {
+      "ability": "GC90 Signal Disrupter",
+      "armor": 2,
+      "faction": 0,
+      "gadget": [
+        5,
+        3
+      ],
+      "name": "Mute",
+      "speed": 2,
+      "type": 1,
+      "wid": [
+        22,
+        14,
+        31
+      ]
+    },
+    "15": {
+      "ability": "Armor Panel",
+      "armor": 2,
+      "faction": 1,
+      "gadget": [
+        3,
+        7
+      ],
+      "name": "Castle",
+      "speed": 2,
+      "type": 1,
+      "wid": [
+        17,
+        21,
+        26,
+        29
+      ]
+    },
+    "16": {
+      "ability": "HB-5 Cardiac Sensor",
+      "armor": 1,
+      "faction": 1,
+      "gadget": [
+        6,
+        5
+      ],
+      "name": "Pulse",
+      "speed": 3,
+      "type": 1,
+      "wid": [
+        21,
+        17,
+        29,
+        26
+      ]
+    },
+    "17": {
+      "ability": "MPD-0 Stim Pistol",
+      "armor": 3,
+      "faction": 2,
+      "gadget": [
+        6,
+        3
+      ],
+      "name": "Doc",
+      "speed": 1,
+      "type": 1,
+      "wid": [
+        25,
+        13,
+        16,
+        32,
+        28
+      ]
+    },
+    "18": {
+      "ability": "R1N Armor Pack",
+      "armor": 3,
+      "faction": 2,
+      "gadget": [
+        3,
+        7
+      ],
+      "name": "Rook",
+      "speed": 1,
+      "type": 1,
+      "wid": [
+        16,
+        13,
+        25,
+        28,
+        32
+      ]
+    },
+    "19": {
+      "ability": "EDD MK II Entry Denial Device",
+      "armor": 3,
+      "faction": 3,
+      "gadget": [
+        6,
+        5
+      ],
+      "name": "Kapkan",
+      "speed": 1,
+      "type": 1,
+      "wid": [
+        11,
+        24,
+        33,
+        27
+      ]
+    },
+    "20": {
+      "ability": "RP-46 Mounted LMG",
+      "armor": 3,
+      "faction": 3,
+      "gadget": [
+        6,
+        3
+      ],
+      "name": "Tachanka",
+      "speed": 1,
+      "type": 1,
+      "wid": [
+        24,
+        11,
+        27,
+        33
+      ]
+    },
+    "21": {
+      "ability": "ADS-MKIV Active Defense",
+      "armor": 1,
+      "faction": 4,
+      "gadget": [
+        3,
+        6
+      ],
+      "name": "Jager",
+      "speed": 3,
+      "type": 1,
+      "wid": [
+        23,
+        0,
+        30
+      ]
+    },
+    "22": {
+      "ability": "CED-1 Shock Wire",
+      "armor": 1,
+      "faction": 4,
+      "gadget": [
+        6,
+        5
+      ],
+      "name": "Bandit",
+      "speed": 3,
+      "type": 1,
+      "wid": [
+        15,
+        23,
+        30
+      ]
+    },
+    "23": {
+      "ability": "MK2 LHT Welcome Mat",
+      "armor": 2,
+      "faction": 5,
+      "gadget": [
+        3,
+        6
+      ],
+      "name": "Frost",
+      "speed": 2,
+      "type": 1,
+      "wid": [
+        45,
+        46,
+        38
+      ]
+    },
+    "24": {
+      "ability": "Black Eye",
+      "armor": 2,
+      "faction": 6,
+      "gadget": [
+        3,
+        5
+      ],
+      "name": "Valkyrie",
+      "speed": 2,
+      "type": 1,
+      "wid": [
+        47,
+        48,
+        41
+      ]
+    },
+    "25": {
+      "ability": "Silent Step & Interrogation",
+      "armor": 1,
+      "faction": 7,
+      "gadget": [
+        7,
+        6
+      ],
+      "name": "Caveira",
+      "speed": 3,
+      "type": 1,
+      "wid": [
+        49,
+        50,
+        44
+      ]
+    },
+    "26": {
+      "ability": "X-KAIROS 40mm Launcher",
+      "armor": 1,
+      "faction": 8,
+      "gadget": [
+        1,
+        8
+      ],
+      "name": "Hibana",
+      "speed": 3,
+      "type": 0,
+      "wid": [
+        39,
+        38,
+        37,
+        36
+      ]
+    },
+    "27": {
+      "ability": "YOKAI Drone",
+      "armor": 3,
+      "faction": 8,
+      "gadget": [
+        6,
+        3
+      ],
+      "name": "Echo",
+      "speed": 1,
+      "type": 1,
+      "wid": [
+        38,
+        40,
+        37,
+        36
+      ]
+    },
+    "28": {
+      "ability": "Eyenox (3)",
+      "armor": 2,
+      "faction": 9,
+      "gadget": [
+        2,
+        1
+      ],
+      "name": "Jackal",
+      "speed": 2,
+      "type": 0,
+      "wid": [
+        56,
+        57,
+        58,
+        60,
+        61
+      ]
+    },
+    "29": {
+      "ability": "Black Mirror (2)",
+      "armor": 3,
+      "faction": 9,
+      "gadget": [
+        3,
+        5
+      ],
+      "name": "Mira",
+      "speed": 1,
+      "type": 1,
+      "wid": [
+        56,
+        57,
+        58,
+        59
+      ]
+    }
+  },
+  "weapons_types": {
+    "0": "AR",
+    "1": "SMG",
+    "2": "LMG",
+    "3": "SR",
+    "4": "SG",
+    "5": "PS",
+    "6": "SH"
+  },
+  "weapons": {
+    "0": {
+      "class": 0,
+      "dmg_n": 45,
+      "dmg_s": 38,
+      "mag": 30,
+      "mob": 41,
+      "name": "416-C Carbine",
+      "op": [
+        21
+      ],
+      "slot": 0,
+      "rpm": 700
+    },
+    "1": {
+      "class": 0,
+      "dmg_n": 65,
+      "dmg_s": 55,
+      "mag": 10,
+      "mob": 38,
+      "name": 417,
+      "op": [
+        4
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "2": {
+      "class": 0,
+      "dmg_n": 50,
+      "dmg_s": 42,
+      "mag": 30,
+      "mob": 40,
+      "name": "552-Commando",
+      "op": [
+        9
+      ],
+      "slot": 0,
+      "rpm": 690
+    },
+    "3": {
+      "class": 0,
+      "dmg_n": 49,
+      "dmg_s": 42,
+      "mag": 30,
+      "mob": 40,
+      "name": "556xi",
+      "op": [
+        4
+      ],
+      "slot": 0,
+      "rpm": 690
+    },
+    "4": {
+      "class": 0,
+      "dmg_n": 47,
+      "dmg_s": 40,
+      "mag": 30,
+      "mob": 40,
+      "name": "AK-12",
+      "op": [
+        7
+      ],
+      "slot": 0,
+      "rpm": 850
+    },
+    "5": {
+      "class": 0,
+      "dmg_n": 45,
+      "dmg_s": 38,
+      "mag": 25,
+      "mob": 40,
+      "name": "K33",
+      "op": [
+        1
+      ],
+      "slot": 0,
+      "rpm": 749
+    },
+    "6": {
+      "class": 0,
+      "dmg_n": 44,
+      "dmg_s": 37,
+      "mag": 30,
+      "mob": 40,
+      "name": "Aug-A2",
+      "op": [
+        9
+      ],
+      "slot": 0,
+      "rpm": 770
+    },
+    "7": {
+      "class": 0,
+      "dmg_n": 42,
+      "dmg_s": 36,
+      "mag": 30,
+      "mob": 40,
+      "name": "F2",
+      "op": [
+        3
+      ],
+      "slot": 0,
+      "rpm": 980
+    },
+    "8": {
+      "class": 0,
+      "dmg_n": 40,
+      "dmg_s": 34,
+      "mag": 30,
+      "mob": 41,
+      "name": "G36C",
+      "op": [
+        2
+      ],
+      "slot": 0,
+      "rpm": 780
+    },
+    "9": {
+      "class": 0,
+      "dmg_n": 48,
+      "dmg_s": 41,
+      "mag": 30,
+      "mob": 40,
+      "name": "L85A2",
+      "op": [
+        0,
+        1
+      ],
+      "slot": 0,
+      "rpm": 670
+    },
+    "10": {
+      "class": 0,
+      "dmg_n": 44,
+      "dmg_s": 37,
+      "mag": 30,
+      "mob": 41,
+      "name": "R4-C",
+      "op": [
+        2
+      ],
+      "slot": 0,
+      "rpm": 860
+    },
+    "11": {
+      "class": 1,
+      "dmg_n": 42,
+      "dmg_s": 36,
+      "mag": 30,
+      "mob": 45,
+      "name": "9x19VSN",
+      "op": [
+        19,
+        20
+      ],
+      "slot": 0,
+      "rpm": 750
+    },
+    "12": {
+      "class": 1,
+      "dmg_n": 35,
+      "dmg_s": 30,
+      "mag": 30,
+      "mob": 45,
+      "name": "FMG-9",
+      "op": [
+        13
+      ],
+      "slot": 0,
+      "rpm": 800
+    },
+    "13": {
+      "class": 1,
+      "dmg_n": 40,
+      "dmg_s": 34,
+      "mag": 30,
+      "mob": 45,
+      "name": "MP5",
+      "op": [
+        17,
+        18
+      ],
+      "slot": 0,
+      "rpm": 800
+    },
+    "14": {
+      "class": 1,
+      "dmg_n": 40,
+      "dmg_s": 34,
+      "mag": 30,
+      "mob": 45,
+      "name": "MP5K",
+      "op": [
+        14
+      ],
+      "slot": 0,
+      "rpm": 800
+    },
+    "15": {
+      "class": 1,
+      "dmg_n": 38,
+      "dmg_s": 32,
+      "mag": 30,
+      "mob": 45,
+      "name": "MP7",
+      "op": [
+        22
+      ],
+      "slot": 0,
+      "rpm": 750
+    },
+    "16": {
+      "class": 1,
+      "dmg_n": 25,
+      "dmg_s": 21,
+      "mag": 50,
+      "mob": 45,
+      "name": "P90",
+      "op": [
+        17,
+        18
+      ],
+      "slot": 0,
+      "rpm": 970
+    },
+    "17": {
+      "class": 1,
+      "dmg_n": 48,
+      "dmg_s": 40,
+      "mag": 25,
+      "mob": 45,
+      "name": "UMP45",
+      "op": [
+        15,
+        16
+      ],
+      "slot": 0,
+      "rpm": 600
+    },
+    "18": {
+      "class": 2,
+      "dmg_n": 42,
+      "dmg_s": 36,
+      "mag": 100,
+      "mob": 35,
+      "name": "6P41",
+      "op": [
+        7
+      ],
+      "slot": 0,
+      "rpm": 680
+    },
+    "19": {
+      "class": 2,
+      "dmg_n": 39,
+      "dmg_s": 33,
+      "mag": 50,
+      "mob": 35,
+      "name": "G8A1",
+      "op": [
+        9
+      ],
+      "slot": 0,
+      "rpm": 850
+    },
+    "20": {
+      "class": 3,
+      "dmg_n": 180,
+      "dmg_s": 153,
+      "mag": 10,
+      "mob": 38,
+      "name": "OTs-03",
+      "op": [
+        6
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "21": {
+      "class": 4,
+      "dmg_n": 45,
+      "dmg_s": 38,
+      "mag": 8,
+      "mob": 42,
+      "name": "M1014",
+      "op": [
+        15,
+        16,
+        4
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "22": {
+      "class": 4,
+      "dmg_n": 48,
+      "dmg_s": 40,
+      "mag": 7,
+      "mob": 42,
+      "name": "M590A1",
+      "op": [
+        0,
+        13,
+        14
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "23": {
+      "class": 4,
+      "dmg_n": 60,
+      "dmg_s": 51,
+      "mag": 7,
+      "mob": 43,
+      "name": "M870",
+      "op": [
+        21,
+        22
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "24": {
+      "class": 4,
+      "dmg_n": 50,
+      "dmg_s": 43,
+      "mag": 8,
+      "mob": 50,
+      "name": "SASG-12",
+      "op": [
+        19,
+        20
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "25": {
+      "class": 4,
+      "dmg_n": 53,
+      "dmg_s": 45,
+      "mag": 7,
+      "mob": 42,
+      "name": "SG-CQB",
+      "op": [
+        3,
+        17,
+        18
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "26": {
+      "class": 5,
+      "dmg_n": 38,
+      "dmg_s": 32,
+      "mag": 20,
+      "mob": 50,
+      "name": "5.7 USG",
+      "op": [
+        2,
+        4,
+        15,
+        16
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "27": {
+      "class": 5,
+      "dmg_n": 42,
+      "dmg_s": 36,
+      "mag": 18,
+      "mob": 50,
+      "name": "GSH-18",
+      "op": [
+        6,
+        7,
+        19,
+        20
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "28": {
+      "class": 5,
+      "dmg_n": 64,
+      "dmg_s": 54,
+      "mag": 6,
+      "mob": 50,
+      "name": "LFP586",
+      "op": [
+        3,
+        5,
+        17,
+        18
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "29": {
+      "class": 5,
+      "dmg_n": 50,
+      "dmg_s": 43,
+      "mag": 7,
+      "mob": 50,
+      "name": "M45 MEUSOC",
+      "op": [
+        2,
+        4,
+        15,
+        16
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "30": {
+      "class": 5,
+      "dmg_n": 48,
+      "dmg_s": 41,
+      "mag": 15,
+      "mob": 50,
+      "name": "P12",
+      "op": [
+        8,
+        9,
+        21,
+        22
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "31": {
+      "class": 5,
+      "dmg_n": 53,
+      "dmg_s": 45,
+      "mag": 15,
+      "mob": 50,
+      "name": "P226 Mk 25",
+      "op": [
+        0,
+        1,
+        13,
+        14
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "32": {
+      "class": 5,
+      "dmg_n": 40,
+      "dmg_s": 34,
+      "mag": 16,
+      "mob": 50,
+      "name": "P9",
+      "op": [
+        3,
+        5,
+        17,
+        18
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "33": {
+      "class": 5,
+      "dmg_n": 58,
+      "dmg_s": 49,
+      "mag": 8,
+      "mob": 50,
+      "name": "PMM",
+      "op": [
+        6,
+        7,
+        19,
+        20
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "34": {
+      "class": 1,
+      "dmg_n": 34,
+      "dmg_s": 29,
+      "mag": 16,
+      "mob": 48,
+      "name": "SMG-11",
+      "op": [
+        0,
+        13
+      ],
+      "slot": 1,
+      "rpm": 1270
+    },
+    "35": {
+      "class": 6,
+      "dmg_n": 0,
+      "dmg_s": 0,
+      "mag": 0,
+      "mob": 0,
+      "name": "Ballistic Shield",
+      "op": [
+        5
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "36": {
+      "class": 1,
+      "dmg_n": 32,
+      "dmg_s": 27,
+      "mag": 25,
+      "mob": 50,
+      "name": "Bearing 9",
+      "op": [
+        26,
+        27
+      ],
+      "slot": 1,
+      "rpm": 1100
+    },
+    "37": {
+      "class": 3,
+      "dmg_n": 52,
+      "dmg_s": null,
+      "mag": 20,
+      "mob": 39,
+      "name": "CAMRS",
+      "op": [
+        10
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "38": {
+      "class": 5,
+      "dmg_n": 45,
+      "dmg_s": 38,
+      "mag": 13,
+      "mob": 50,
+      "name": "MK1 9mm",
+      "op": [
+        10
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "39": {
+      "class": 0,
+      "dmg_n": 52,
+      "dmg_s": null,
+      "mag": 20,
+      "mob": 40,
+      "name": "MK17 CQB",
+      "op": [
+        11
+      ],
+      "slot": 0,
+      "rpm": 585
+    },
+    "40": {
+      "class": 3,
+      "dmg_n": 75,
+      "dmg_s": 65,
+      "mag": 20,
+      "mob": 38,
+      "name": "SR-25",
+      "op": [
+        11
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "41": {
+      "class": 5,
+      "dmg_n": 60,
+      "dmg_s": null,
+      "mag": 7,
+      "mob": 50,
+      "name": "D-50",
+      "op": [
+        11
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "42": {
+      "class": 0,
+      "dmg_n": 52,
+      "dmg_s": 44,
+      "mag": 30,
+      "mob": 50,
+      "name": "PARA-308",
+      "op": [
+        12
+      ],
+      "slot": 0,
+      "rpm": 650
+    },
+    "43": {
+      "class": 2,
+      "dmg_n": 39,
+      "dmg_s": null,
+      "mag": 100,
+      "mob": 50,
+      "name": "M249",
+      "op": [
+        12
+      ],
+      "slot": 0,
+      "rpm": 650
+    },
+    "44": {
+      "class": 5,
+      "dmg_n": 39,
+      "dmg_s": 33,
+      "mag": 15,
+      "mob": 50,
+      "name": "92FS",
+      "op": [
+        12
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "45": {
+      "class": 4,
+      "dmg_n": 42,
+      "dmg_s": null,
+      "mag": 8,
+      "mob": 42,
+      "name": "Super 90",
+      "op": [
+        23
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "46": {
+      "class": 1,
+      "dmg_n": 38,
+      "dmg_s": null,
+      "mag": 34,
+      "mob": 45,
+      "name": "9mm C1",
+      "op": [
+        23
+      ],
+      "slot": 0,
+      "rpm": 575
+    },
+    "47": {
+      "class": 1,
+      "dmg_n": 32,
+      "dmg_s": null,
+      "mag": 30,
+      "mob": 45,
+      "name": "MPX",
+      "op": [
+        24
+      ],
+      "slot": 0,
+      "rpm": 970
+    },
+    "48": {
+      "class": 4,
+      "dmg_n": 50,
+      "dmg_s": null,
+      "mag": 7,
+      "mob": 42,
+      "name": "SPAS-12",
+      "op": [
+        24
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "49": {
+      "class": 1,
+      "dmg_n": 36,
+      "dmg_s": 30,
+      "mag": 30,
+      "mob": 50,
+      "name": "M12",
+      "op": [
+        25
+      ],
+      "slot": 0,
+      "rpm": 550
+    },
+    "50": {
+      "class": 4,
+      "dmg_n": 28,
+      "dmg_s": null,
+      "mag": 6,
+      "mob": 50,
+      "name": "SPAS-15",
+      "op": [
+        25
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "51": {
+      "class": 0,
+      "dmg_n": 42,
+      "dmg_s": null,
+      "mag": 30,
+      "mob": 40,
+      "name": "C8-SFW",
+      "op": [
+        10
+      ],
+      "slot": 0,
+      "rpm": 837
+    },
+    "52": {
+      "class": 5,
+      "dmg_n": 50,
+      "dmg_s": 42,
+      "mag": 12,
+      "mob": 50,
+      "name": "P229",
+      "op": [
+        26,
+        27
+      ],
+      "slot": 1,
+      "rpm": 0
+    },
+    "53": {
+      "class": 4,
+      "dmg_n": 32,
+      "dmg_s": null,
+      "mag": 7,
+      "mob": 50,
+      "name": "SuperNova",
+      "op": [
+        26,
+        27
+      ],
+      "slot": 0,
+      "rpm": 0
+    },
+    "54": {
+      "class": 0,
+      "dmg_n": 41,
+      "dmg_s": 34,
+      "mag": 20,
+      "mob": 50,
+      "name": "Type-89",
+      "op": [
+        26
+      ],
+      "slot": 0,
+      "rpm": 850
+    },
+    "55": {
+      "class": 1,
+      "dmg_n": 23,
+      "dmg_s": 23,
+      "mag": 30,
+      "mob": 50,
+      "name": "MP5SD",
+      "op": [
+        27
+      ],
+      "slot": 0,
+      "rpm": 800
+    },
+    "56": {
+      "class": 4,
+      "dmg_n": 66,
+      "dmg_s": null,
+      "mag": 4,
+      "mob": 50,
+      "name": "ITA12S",
+      "op": [
+        29,
+        28
+      ],
+      "slot": 1,
+      "rpm": 95
+    },
+    "57": {
+      "class": 5,
+      "dmg_n": 43,
+      "dmg_s": 36,
+      "mag": 12,
+      "mob": 50,
+      "name": "USP40",
+      "op": [
+        29,
+        28
+      ],
+      "slot": 1,
+      "rpm": 375
+    },
+    "58": {
+      "class": 4,
+      "dmg_n": 47,
+      "dmg_s": null,
+      "mag": 7,
+      "mob": 50,
+      "name": "ITA12L",
+      "op": [
+        29,
+        28
+      ],
+      "slot": 0,
+      "rpm": 95
+    },
+    "59": {
+      "class": 1,
+      "dmg_n": 23,
+      "dmg_s": 19,
+      "mag": 25,
+      "mob": 50,
+      "name": "Vector .45 ACP",
+      "op": [
+        29
+      ],
+      "slot": 0,
+      "rpm": 1200
+    },
+    "60": {
+      "class": 0,
+      "dmg_n": 46,
+      "dmg_s": 39,
+      "mag": 30,
+      "mob": 50,
+      "name": "C7E",
+      "op": [
+        28
+      ],
+      "slot": 0,
+      "rpm": 800
+    },
+    "61": {
+      "class": 1,
+      "dmg_n": 33,
+      "dmg_s": 28,
+      "mag": 50,
+      "mob": 50,
+      "name": "PDW9",
+      "op": [
+        28
+      ],
+      "slot": 0,
+      "rpm": 800
+    }
+  }
+}
